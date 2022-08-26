@@ -1,7 +1,10 @@
+import React from "react";
 
 const ItemListContainer = (props) => {
     return (
-        props.propiedad1
+        <div className="itemsContainer">
+            {props.prop1}
+        </div>
     );
 };
 

@@ -214,6 +214,7 @@ button {
 @media (hover: hover) and (pointer: fine) {
 	.btn:hover {
 		background-color: $color-30a;
+		box-shadow: 0 0 12px 0px #0d111227;
 	}
 }
 

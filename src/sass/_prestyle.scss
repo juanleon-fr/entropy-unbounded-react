@@ -80,7 +80,7 @@ header {
 	width: 100%;
 	height: $header-height;
 	z-index: 10;
-
+	overflow: hidden;
 	* {
 		color: $color-30;
 	}
@@ -93,7 +93,6 @@ nav {
 	justify-content: space-between;
 	margin: 0 80px;
 	height: $header-height;
-
 	.nav-logo {
 		height: fit-content;
 		width: fit-content;
@@ -101,7 +100,9 @@ nav {
 		flex-direction: row;
 		align-items: center;
 		justify-content: flex-start;
-
+		.nav-icon {
+			position: relative;
+		}
 		button {
 			width: fit-content;
 			height: fit-content;
@@ -111,6 +112,7 @@ nav {
 			img {
 				height: calc($header-height - 26px);
 				position: center;
+				transition: 0.25s;
 			}
 		}
 
@@ -118,14 +120,61 @@ nav {
 			display: none;
 		}
 	}
-
+	.circle {
+		position: absolute;
+		background-color: $color-10;
+		overflow: visible;
+		width: 4px;
+		height: 4px;
+		border-radius: 50%;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		z-index: -1;
+		transition: 0.25s;
+		opacity: 0;
+		background-color: $color-30;
+	}
+	.line {
+		position: absolute;
+		background-color: $color-10;
+		width: 50px;
+		height: $header-height;
+		left: -50%;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		z-index: 1;
+		background-color: none;
+		mix-blend-mode: hard-light;
+		background-color: $color-60;
+		transition: 0s;
+		opacity: 0.6;
+	}
+	.nav-logo:hover {
+		.nav-icon {
+			img {
+				filter: invert(100%) sepia(0%) saturate(0%) brightness(150%) contrast(180%);
+			}
+		}
+		.circle {
+			opacity: 1;
+			transform: scale(1100%);
+		}
+		.line {
+		transform: translate(380%,0);
+		transition: 0.5s;
+		transition-delay: 0.1s;
+		}
+	}
 	.nav-menu {
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
 		align-items: center;
-		gap: 10px;
-		
+		gap: 14px;		
 	}
 }
 
@@ -136,12 +185,14 @@ nav {
 @media screen and (min-width: 1024px) {
 	nav {
 		.nav-logo {
-			gap: 14px;
+			gap: 8px;
 			.nav-logotype {
 				display: flex;
 				width: fit-content;
 				height: fit-content;
 				align-items: center;
+				overflow: hidden;
+				position: relative;
 			}
 		}
 	}
@@ -188,7 +239,6 @@ nav {
 	font-size: 1.5rem;
 }
 
-
 //buttons and hyperlinks
 
 button {
@@ -196,14 +246,15 @@ button {
 }
 
 .btn {
+	position: relative;
+	overflow: hidden;
 	font-weight: 500;
 	padding: 1.2em;
 	padding-top: 0.6em;
 	padding-bottom: 0.6em;
-	border-radius: 1.2em;
+	// border-radius: 1.2em;
 	transition: 0.4s;
 	height: min-content;
-	background-color: unset;
 }
 
 .btn:active,
@@ -211,27 +262,16 @@ button {
 	transition: 0.2s;
 }
 
-@media (hover: hover) and (pointer: fine) {
-	.btn:hover {
-		background-color: $color-30a;
-		box-shadow: 0 0 12px 0px #0d111227;
-	}
+.btn:hover {
+	background-color: $color-30a;
 }
-
 
 .btn-color-60 {
 	background-color: $color-60;
 	color: $color-30;
 }
 
-@media (hover: hover) and (pointer: fine) {
-	.btn-color-60:hover {
-		background-color: $color-30;
-		color: $color-60;
-	}
-}
-
-.btn-color-60:active {
+.btn-color-60:hover {
 	background-color: $color-30;
 	color: $color-60;
 }
@@ -241,14 +281,7 @@ button {
 	color: $color-30;
 }
 
-@media (hover: hover) and (pointer: fine) {
-	.btn-color-60-alt:hover {
-		background-color: $color-10;
-		color: $color-30;
-	}
-}
-
-.btn-color-60-alt:active {
+.btn-color-60-alt:hover {
 	background-color: $color-10;
 	color: $color-30;
 }
@@ -258,13 +291,7 @@ button {
 	color: $color-60;
 }
 
-@media (hover: hover) and (pointer: fine) {
-	.btn-color-30:hover {
-		background-color: $color-30hl;
-	}
-}
-
-.btn-color-30:active {
+.btn-color-30:hover {
 	background-color: $color-30hl;
 }
 
@@ -273,31 +300,18 @@ button {
 	color: $color-60;
 }
 
-@media (hover: hover) and (pointer: fine) {
-	.btn-color-30-alt:hover {
-		background-color: $color-60;
-		color: $color-30;
-	}
-}
-
-.btn-color-30-alt:active {
+.btn-color-30-alt:hover {
 	background-color: $color-60;
 	color: $color-30;
 }
+
 
 .btn-color-10 {
 	background-color: $color-10;
 	color: $color-30;
 }
 
-@media (hover: hover) and (pointer: fine) {
-	.btn-color-10:hover {
-		background-color: $color-30;
-		color: $color-60;
-	}
-}
-
-.btn-color-10:active {
+.btn-color-10:hover {
 	background-color: $color-30;
 	color: $color-60;
 }
@@ -307,17 +321,10 @@ button {
 	color: $color-30;
 }
 
-@media (hover: hover) and (pointer: fine) {
-	.btn-color-10-alt:hover {
-		background-color: $color-60;
-		color: $color-30;
-		;
-	}
-}
-
-.btn-color-10-alt:active {
+.btn-color-10-alt:hover {
 	background-color: $color-60;
 	color: $color-30;
+	;
 }
 
 .hlink {
@@ -325,12 +332,9 @@ button {
 	transition: 0.4s;
 }
 
-@media (hover: hover) and (pointer: fine) {
-	.hlink:hover {
-		color: $color-10;
-	}
+.hlink:hover {
+	color: $color-10;
 }
-
 
 .hlink-color-10 {
 	text-decoration: underline;
@@ -338,10 +342,8 @@ button {
 	color: $color-10;
 }
 
-@media (hover: hover) and (pointer: fine) {
-	.hlink-color-10:hover {
-		color: $color-30;
-	}
+.hlink-color-10:hover {
+	color: $color-30;
 }
 
 $cart-size: 40px;
@@ -374,7 +376,6 @@ $cart-size: 40px;
 	color: $color-60;
 	background-color: $color-30;
 }
-
 
 .login-btn {
 	padding: 1.6em;
@@ -418,6 +419,29 @@ $cart-size: 40px;
 }
 
 //sweetalert2
+
+// Special Buttons
+
+.blackbar {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: -30%;
+	margin: auto;
+	width: 20%;
+	height: 100%;
+	mix-blend-mode: soft-light;
+	background-color: $color-60;
+	transition: 0s;
+}
+
+.btn:hover {
+	.blackbar {
+		transform: translate(650%);
+		transition: 0.4s;
+		transition-delay: 0.1s;
+	}
+}
 
 .swal2-popup {
 	color: #0e1213;

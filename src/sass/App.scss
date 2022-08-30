@@ -3,15 +3,45 @@
 @import 'vars';
 @import 'typog';
 @import 'prestyle';
+@import 'itemListContainer';
+@import 'ItemCount';
+
+.App {
+    height: 100%;
+    width: 100%;
+}
+
+.Wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 /* Seccion Home */
 
-
 #home1 {
     background: unset;
-    background-image: url(../assets/img/home1.jpg);
-    background-size: cover;
-    background-position: left 0 -1800px;
+    position: relative;
+    height: calc(100vh - $header-height);
+}
+
+.homeImgWrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -2;
+    transition: 0s;
+    img {
+        width: 100%;
+    }
 }
 
 .home1__headline {
@@ -38,6 +68,10 @@
     margin: 10px;
 }
 
+.dispNone {
+    display: none;
+}
+
 .separator {
     display: flex;
     flex-direction: column;
@@ -45,7 +79,7 @@
     justify-content: center;
     height: 500px;
     width: 100%;
-    background: $color-30;
+    background: $color-60;
     background-image: url(../assets/structure/separator-waves.svg);
     background-size: cover;
 
@@ -57,7 +91,7 @@
 
 .separator--blank {
     display: block;
-    height: 200px;
+    height: 140px;
     width: 100%;
 }
 
@@ -107,6 +141,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+
     h1 {
         font-family: $maintypog;
         text-transform: uppercase;
@@ -134,15 +169,18 @@
     justify-content: space-between;
     width: 300px;
     height: 400px;
+
     .product--card__img {
         margin-top: 10px;
         height: calc(100% - 100px);
         width: calc(100% - 20px);
         overflow: hidden;
         position: relative;
+
         img {
             width: 100%;
         }
+
         .precio {
             margin-left: 10px;
             padding: 6px;
@@ -167,17 +205,20 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        div {
+
+        .product--card__data__details {
             width: calc(100% - 100px);
         }
 
-        h3, h4 {
+        h3,
+        h4 {
             text-transform: uppercase;
             font-family: $maintypog;
             font-size: 1rem;
             font-weight: 700;
             text-align: left;
         }
+
         h4 {
             font-family: $defaulttypog;
             font-size: 1rem;
@@ -195,11 +236,13 @@
     align-items: center;
     justify-content: space-between;
     gap: 14px;
+
     img {
         height: 0.3rem;
         overflow: hidden;
-        transform: scale(800%) translate(0.03rem,0.01rem);
+        transform: scale(800%) translate(0.03rem, 0.01rem);
     }
+
     p {
         font-weight: 500;
     }
@@ -214,6 +257,7 @@
     display: grid;
     grid-template-rows: 60px 1fr 60px 60px;
     text-align: center;
+
     .cart--title {
         grid-row: 1/2;
         font-size: 1.5rem;
@@ -221,11 +265,13 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+
         h3 {
             font-family: $maintypog;
             text-transform: uppercase;
             color: $color-30;
             font-weight: 700;
+
             span {
                 font-weight: 700;
                 padding: 8px;
@@ -237,25 +283,31 @@
             }
         }
     }
+
     .cart__container {
         grid-row: 2/3;
+
         span {
             text-align: center;
         }
+
         .autogrid {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             height: 60px;
+
             >* {
                 display: flex;
                 align-items: center;
                 justify-content: center;
             }
+
             .productName {
                 display: flex;
                 flex-direction: row;
                 align-items: center;
                 justify-content: flex-start;
+
                 .cart__img {
                     height: 54px;
                     width: 54px;
@@ -263,13 +315,16 @@
                     border: solid 1px $color-30b;
                     margin-left: 20px;
                     margin-right: 6px;
+
                     .miniImg {
                         width: 100%;
                     }
                 }
             }
+
             .mult {
                 margin-left: 10px;
+
                 button {
                     margin-left: 16px;
                     margin-right: 16px;
@@ -278,6 +333,7 @@
         }
 
     }
+
     .flex {
         display: flex;
         width: 100%;
@@ -285,20 +341,24 @@
         align-items: center;
         justify-content: center;
     }
+
     .cart__suma {
         grid-row: 3/4;
         background-color: $color-30;
+
         span {
             color: $color-60;
         }
 
     }
+
     .cart__checkout {
         grid-row: 4/5;
         background-color: $color-10;
+
         button {
             background-color: unset;
             color: $color-30;
         }
-    }     
+    }
 }

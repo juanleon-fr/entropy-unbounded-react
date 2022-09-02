@@ -1,13 +1,13 @@
-import React from 'react';
 import NavBar from './NavBar'
 import ItemListContainer from './ItemListContainer';
-import HomeHero from './HomeHero'
+import HomeHero from './HomeHero';
+import ItemCount from './ItemCount';
 
 function Wrapper() {
   return (
     <div className="Wrapper">
-      <HomeHero/>
       <NavBar />
+      <HomeHero/>
       <ItemListContainer/>
     </div>
   );

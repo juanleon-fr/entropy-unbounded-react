@@ -1,29 +1,38 @@
 import React, { useState } from "react";
 
-function ItemCount(props) {
+function ItemCount({title,stock,initial}) {
 
-    const [count, setCount] = useState(Number(props.initial));
+    const [count, setCount] = useState(initial);
 
 
     function onAdd() {
-        if (Number(props.stock >= 1)) {
+        if (stock >= 1) {
             // aqui voy a quitar la cantidad de items agregados al carrito del array de items almacenados en un json
-            alert(`${count} x ${props.nombre} agregado al carrito.`);
+            alert(`${count} x ${title} agregado al carrito.`);
 
+        }
+    }
+
+    function itemAdder(op) {
+        if (op==="substract") {
+            if (count > 1) { setCount(count - 1) }
+        }
+        if (op==="add") {
+            if (count < stock) { setCount(count + 1) }
         }
     }
 
     return (
         <div className="card itemcount">
             <div className="itemName">
-                <p>{props.nombre}</p>
+                <p>{title}</p>
             </div>
             <div className="counter card">
-                <button onClick={() => { if (count > 1) { setCount(count - 1) } }}>-</button>
+                <button onClick={() => itemAdder('substract')}>-</button>
                 <div>
                     <p>{count}</p>
                 </div>
-                <button onClick={() => { if (count < Number(props.stock)) { setCount(count + 1) } }}>+</button>
+                <button onClick={() => itemAdder('add')}>+</button>
             </div>
             <button className="btn btn-color-30 width100" onClick={onAdd}>
                 Sumar al carrito

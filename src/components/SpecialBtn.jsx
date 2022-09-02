@@ -1,19 +1,17 @@
-import React from 'react';
-
-const Spbtn = (props) => {
-    switch (props.color) {
+const Spbtn = ({input,color,width}) => {
+    switch (color) {
         case ('color-10'):
             return (
                 <button className="btn btn-color-10">
-                    {props.input}
+                    {input}
                     <div className='blackbar'></div>
                 </button>
             );
         case ('color-30'):
-            if (props.width === "100") {
+            if (width === "100") {
                 return (
                     <button className="btn btn-color-30 width100">
-                        {props.input}
+                        {input}
                         <div className='blackbar'></div>
                     </button>
                 )
@@ -21,7 +19,7 @@ const Spbtn = (props) => {
             else {
                 return (
                     <button className="btn btn-color-30">
-                        {props.input}
+                        {input}
                         <div className='blackbar'></div>
                     </button>
                 )
@@ -29,14 +27,14 @@ const Spbtn = (props) => {
         case ('color-60'):
             return (
                 <button className="btn btn-color-60">
-                    {props.input}
+                    {input}
                     <div className='blackbar'></div>
                 </button>
             );
         default:
             return (
                 <button className="btn link">
-                    {props.input}
+                    {input}
                     <div className='blackbar'></div>
                 </button>
             );

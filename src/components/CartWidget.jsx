@@ -1,4 +1,3 @@
-import React from 'react';
 import ShopIcon from '../assets/icons/cart-icon.svg';
 
 const CartWidget = () => {

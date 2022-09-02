@@ -1,0 +1,218 @@
+[
+    {
+        "id": "01",
+        "type": "tshirt",
+        "title": "Remera Kelvin",
+        "color": "blanca",
+        "pictureUrl": "../assets/img/productos/remeras/remera-1.jpg",
+        "price": 3200,
+        "stock": 100
+    },
+    {
+        "id": "02",
+        "type": "tshirt",
+        "title": "Remera Chaos",
+        "color": "beige",
+        "pictureUrl": "../assets/img/productos/remeras/remera-2.jpg",
+        "price": 3500,
+        "stock": 1
+    },
+    {
+        "id": "03",
+        "type": "tshirt",
+        "title": "Remera Matter",
+        "color": "azul marino",
+        "pictureUrl": "../assets/img/productos/remeras/remera-3.jpg",
+        "price": 3300,
+        "stock": 10
+    },
+    {
+        "id": "04",
+        "type": "tshirt",
+        "title": "Remera Disorder",
+        "color": "amarilla",
+        "pictureUrl": "../assets/img/productos/remeras/remera-4.jpg",
+        "price": 3100,
+        "stock": 3
+    },
+    {
+        "id": "05",
+        "type": "tshirt",
+        "title": "Remera Energy",
+        "color": "violeta",
+        "pictureUrl": "../assets/img/productos/remeras/remera-5.jpg",
+        "price": 3300,
+        "stock": 80
+    },
+    {
+        "id": "06",
+        "type": "tshirt",
+        "title": "Remera Force",
+        "color": "verde militar",
+        "pictureUrl": "../assets/img/productos/remeras/remera-6.jpg",
+        "price": 3000,
+        "stock": 12
+    },
+    {
+        "id": "07",
+        "type": "tshirt",
+        "title": "Remera Disrupt",
+        "color": "rosa",
+        "pictureUrl": "../assets/img/productos/remeras/remera-7.jpg",
+        "price": 4300,
+        "stock": 10
+    },
+    {
+        "id": "08",
+        "type": "tshirt",
+        "title": "Remera Impulse",
+        "color": "naranja",
+        "pictureUrl": "../assets/img/productos/remeras/remera-8.jpg",
+        "price": 4700,
+        "stock": 5
+    },
+    {
+        "id": "09",
+        "type": "tshirt",
+        "title": "Remera Momentum",
+        "color": "negra",
+        "pictureUrl": "../assets/img/productos/remeras/remera-9.jpg",
+        "price": 3600,
+        "stock": 1
+    },
+    {
+        "id": "10",
+        "type": "hoodie",
+        "title": "Buzo Albert",
+        "color": "verde militar",
+        "pictureUrl": "../assets/img/productos/buzos/buzo-albert.jpg",
+        "price": 5000,
+        "stock": 5
+    },
+    {
+        "id": "11",
+        "type": "hoodie",
+        "title": "Buzo Nikola",
+        "color": "negro",
+        "pictureUrl": "../assets/img/productos/buzos/buzo-nikola.jpg",
+        "price": 4800,
+        "stock": 10
+    },
+    {
+        "id": "12",
+        "type": "hoodie",
+        "title": "Buzo Isaac",
+        "color": "camel oscuro",
+        "pictureUrl": "../assets/img/productos/buzos/buzo-isaac.jpg",
+        "price": 4900,
+        "stock": 3
+    },
+    {
+        "id": "13",
+        "type": "hoodie",
+        "title": "Buzo Ludwig",
+        "color": "blanco",
+        "pictureUrl": "../assets/img/productos/buzos/buzo-ludwig.jpg",
+        "price": 4300,
+        "stock": 5
+    },
+    {
+        "id": "14",
+        "type": "hoodie",
+        "title": "Buzo Rankine",
+        "color": "celeste",
+        "pictureUrl": "../assets/img/productos/buzos/buzo-rankine.jpg",
+        "price": 4700,
+        "stock": 4
+    },
+    {
+        "id": "15",
+        "type": "hoodie",
+        "title": "Buzo Rudolf",
+        "color": "arena",
+        "pictureUrl": "../assets/img/productos/buzos/buzo-rudolf.jpg",
+        "price": 3600,
+        "stock": 102
+    },
+    {
+        "id": "16",
+        "type": "pant",
+        "title": "Jogger Kelvin",
+        "color": "negro",
+        "pictureUrl": "../assets/img/productos/pantalones/jogger-kelvin.jpg",
+        "price": 5000,
+        "stock": 10
+    },
+    {
+        "id": "17",
+        "type": "pant",
+        "title": "Jogger Chaos",
+        "color": "verde militar",
+        "pictureUrl": "../assets/img/productos/pantalones/jogger-chaos.jpg",
+        "price": 4800,
+        "stock": 5
+    },
+    {
+        "id": "18",
+        "type": "pant",
+        "title": "Jogger Matter",
+        "color": "azul marino",
+        "pictureUrl": "../assets/img/productos/pantalones/jogger-matter.jpg",
+        "price": 4900,
+        "stock": 4
+    },
+    {
+        "id": "19",
+        "type": "pant",
+        "title": "Jogger Disorder",
+        "color": "mostaza",
+        "pictureUrl": "../assets/img/productos/pantalones/jogger-disorder.jpg",
+        "price": 4300,
+        "stock": 3
+    },
+    {
+        "id": "20",
+        "type": "pant",
+        "title": "Jogger Energy",
+        "color": "gris",
+        "pictureUrl": "../assets/img/productos/pantalones/jogger-energy.jpg",
+        "price": 4700,
+        "stock": 4
+    },
+    {
+        "id": "21",
+        "type": "pant",
+        "title": "Jogging Force",
+        "color": "azul marino",
+        "pictureUrl": "../assets/img/productos/pantalones/jogging-force.jpg",
+        "price": 3600,
+        "stock": 1
+    },
+    {
+        "id": "22",
+        "type": "pant",
+        "title": "Jogger Kelvin Clain test long text",
+        "color": "violeta",
+        "pictureUrl": "../assets/img/productos/pantalones/jogger-kelvin-clain.jpg",
+        "price": 6900,
+        "stock": 10
+    },
+    {
+        "id": "23",
+        "type": "pant",
+        "title": "Jogger Chau Chau",
+        "color": "bordó",
+        "pictureUrl": "../assets/img/productos/pantalones/jogger-chau-chau.jpg",
+        "price": 6700,
+        "stock": 3
+    },
+    {
+        "id": "24",
+        "type": "pant",
+        "title": "Jogger Dark Matter",
+        "color": "radiactivo xd",
+        "pictureUrl": "../assets/img/productos/pantalones/jogger-dark-matter.jpg",
+        "price": 6600,
+        "stock": 10
+    }
+]

@@ -1,4 +1,3 @@
-import React from 'react';
 import NavIcon from '../assets/icons/entropy-icon.svg';
 import NavLogotype from '../assets/icons/entropy-logotype.svg';
 import CartWidget from './CartWidget';
@@ -8,7 +7,7 @@ const NavBar = () => {
   return (
     <header>
       <nav className="navbar">
-        <div class="nav-logo">
+        <div className="nav-logo">
           <button className="nav-icon"><img src={NavIcon} alt="Icon" /><div className="circle" /></button>
           <button className="nav-logotype"><img src={NavLogotype} alt="Entropy" /><div className="line" /></button>
         </div>

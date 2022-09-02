@@ -1,5 +1,5 @@
 import ItemListMap from "./ItemListMap"
-import itemListData from "../json/itemListData.json";
+import itemListData from "../utils/json/itemListData.json";
 import desafio from "../utils/ItemPromise";
 import { useEffect, useState } from "react";
 

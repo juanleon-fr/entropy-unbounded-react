@@ -1,9 +1,9 @@
-let isok = true;
+const alwaysTrue = true;
 
 
-let desafio = (task) => {
+let Delay = (task) => {
     return new Promise((resolve, reject) => {
-        if (isok) {
+        if (alwaysTrue) {
             setTimeout(() => {
                 resolve(task)
             }, 2000);
@@ -15,7 +15,7 @@ let desafio = (task) => {
     })
 }
 
-export default desafio
+export default Delay
 
 
 

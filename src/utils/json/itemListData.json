@@ -6,7 +6,8 @@
         "color": "blanca",
         "pictureUrl": "../assets/img/productos/remeras/remera-1.jpg",
         "price": 3200,
-        "stock": 100
+        "stock": 100,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
     },
     {
         "id": "02",
@@ -15,7 +16,8 @@
         "color": "beige",
         "pictureUrl": "../assets/img/productos/remeras/remera-2.jpg",
         "price": 3500,
-        "stock": 1
+        "stock": 1,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
     },
     {
         "id": "03",
@@ -24,7 +26,8 @@
         "color": "azul marino",
         "pictureUrl": "../assets/img/productos/remeras/remera-3.jpg",
         "price": 3300,
-        "stock": 10
+        "stock": 10,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
     },
     {
         "id": "04",
@@ -33,7 +36,8 @@
         "color": "amarilla",
         "pictureUrl": "../assets/img/productos/remeras/remera-4.jpg",
         "price": 3100,
-        "stock": 3
+        "stock": 3,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
     },
     {
         "id": "05",
@@ -42,7 +46,8 @@
         "color": "violeta",
         "pictureUrl": "../assets/img/productos/remeras/remera-5.jpg",
         "price": 3300,
-        "stock": 80
+        "stock": 80,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
     },
     {
         "id": "06",
@@ -51,7 +56,8 @@
         "color": "verde militar",
         "pictureUrl": "../assets/img/productos/remeras/remera-6.jpg",
         "price": 3000,
-        "stock": 12
+        "stock": 12,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
     },
     {
         "id": "07",
@@ -60,7 +66,8 @@
         "color": "rosa",
         "pictureUrl": "../assets/img/productos/remeras/remera-7.jpg",
         "price": 4300,
-        "stock": 10
+        "stock": 10,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
     },
     {
         "id": "08",
@@ -69,7 +76,8 @@
         "color": "naranja",
         "pictureUrl": "../assets/img/productos/remeras/remera-8.jpg",
         "price": 4700,
-        "stock": 5
+        "stock": 5,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
     },
     {
         "id": "09",
@@ -78,7 +86,8 @@
         "color": "negra",
         "pictureUrl": "../assets/img/productos/remeras/remera-9.jpg",
         "price": 3600,
-        "stock": 1
+        "stock": 1,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
     },
     {
         "id": "10",
@@ -87,7 +96,8 @@
         "color": "verde militar",
         "pictureUrl": "../assets/img/productos/buzos/buzo-albert.jpg",
         "price": 5000,
-        "stock": 5
+        "stock": 5,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
     },
     {
         "id": "11",
@@ -96,7 +106,8 @@
         "color": "negro",
         "pictureUrl": "../assets/img/productos/buzos/buzo-nikola.jpg",
         "price": 4800,
-        "stock": 10
+        "stock": 10,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
     },
     {
         "id": "12",
@@ -105,7 +116,8 @@
         "color": "camel oscuro",
         "pictureUrl": "../assets/img/productos/buzos/buzo-isaac.jpg",
         "price": 4900,
-        "stock": 3
+        "stock": 3,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
     },
     {
         "id": "13",
@@ -114,7 +126,8 @@
         "color": "blanco",
         "pictureUrl": "../assets/img/productos/buzos/buzo-ludwig.jpg",
         "price": 4300,
-        "stock": 5
+        "stock": 5,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
     },
     {
         "id": "14",
@@ -123,7 +136,8 @@
         "color": "celeste",
         "pictureUrl": "../assets/img/productos/buzos/buzo-rankine.jpg",
         "price": 4700,
-        "stock": 4
+        "stock": 4,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
     },
     {
         "id": "15",
@@ -132,7 +146,8 @@
         "color": "arena",
         "pictureUrl": "../assets/img/productos/buzos/buzo-rudolf.jpg",
         "price": 3600,
-        "stock": 102
+        "stock": 102,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
     },
     {
         "id": "16",
@@ -141,7 +156,8 @@
         "color": "negro",
         "pictureUrl": "../assets/img/productos/pantalones/jogger-kelvin.jpg",
         "price": 5000,
-        "stock": 10
+        "stock": 10,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
     },
     {
         "id": "17",
@@ -150,7 +166,8 @@
         "color": "verde militar",
         "pictureUrl": "../assets/img/productos/pantalones/jogger-chaos.jpg",
         "price": 4800,
-        "stock": 5
+        "stock": 5,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
     },
     {
         "id": "18",
@@ -159,7 +176,8 @@
         "color": "azul marino",
         "pictureUrl": "../assets/img/productos/pantalones/jogger-matter.jpg",
         "price": 4900,
-        "stock": 4
+        "stock": 4,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
     },
     {
         "id": "19",
@@ -168,7 +186,8 @@
         "color": "mostaza",
         "pictureUrl": "../assets/img/productos/pantalones/jogger-disorder.jpg",
         "price": 4300,
-        "stock": 3
+        "stock": 3,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
     },
     {
         "id": "20",
@@ -177,7 +196,8 @@
         "color": "gris",
         "pictureUrl": "../assets/img/productos/pantalones/jogger-energy.jpg",
         "price": 4700,
-        "stock": 4
+        "stock": 4,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
     },
     {
         "id": "21",
@@ -186,7 +206,8 @@
         "color": "azul marino",
         "pictureUrl": "../assets/img/productos/pantalones/jogging-force.jpg",
         "price": 3600,
-        "stock": 1
+        "stock": 1,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
     },
     {
         "id": "22",
@@ -195,7 +216,8 @@
         "color": "violeta",
         "pictureUrl": "../assets/img/productos/pantalones/jogger-kelvin-clain.jpg",
         "price": 6900,
-        "stock": 10
+        "stock": 10,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
     },
     {
         "id": "23",
@@ -204,7 +226,8 @@
         "color": "bordó",
         "pictureUrl": "../assets/img/productos/pantalones/jogger-chau-chau.jpg",
         "price": 6700,
-        "stock": 3
+        "stock": 3,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
     },
     {
         "id": "24",
@@ -213,6 +236,7 @@
         "color": "radiactivo xd",
         "pictureUrl": "../assets/img/productos/pantalones/jogger-dark-matter.jpg",
         "price": 6600,
-        "stock": 10
+        "stock": 10,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
     }
 ]

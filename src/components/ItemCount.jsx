@@ -1,12 +1,15 @@
 import React, { useState } from "react";
 
-function ItemCount({title,stock,initial}) {
+function ItemCount({ title, stock, initial }) {
+    
+    let stockNum = Number(stock);
+    let initialNum = Number(initial);
 
-    const [count, setCount] = useState(initial);
+    const [count, setCount] = useState(initialNum);
 
 
     function onAdd() {
-        if (stock >= 1) {
+        if (stockNum >= 1) {
             // aqui voy a quitar la cantidad de items agregados al carrito del array de items almacenados en un json
             alert(`${count} x ${title} agregado al carrito.`);
 
@@ -14,11 +17,11 @@ function ItemCount({title,stock,initial}) {
     }
 
     function itemAdder(op) {
-        if (op==="substract") {
+        if (op === "substract") {
             if (count > 1) { setCount(count - 1) }
         }
-        if (op==="add") {
-            if (count < stock) { setCount(count + 1) }
+        if (op === "add") {
+            if (count < stockNum) { setCount(count + 1) }
         }
     }
 

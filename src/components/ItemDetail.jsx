@@ -1,16 +1,16 @@
 import ItemCount from "./ItemCount";
 
 const ItemDetail = ({ data, initial }) => {
-    console.log({ data })
+    const {title, color, price, pictureUrl, description, stock} = data;
     return (
         <>
-            <img src={data.pictureUrl} alt={data.title} />
+            <img src={pictureUrl} alt={title} />
             <div className="itemDetailData">
-                <h3 className="itemTitle">{data.title}</h3>
-                <span className="color">{data.color}</span>
-                <span className="price">${data.price}</span>
-                <p className="description">{data.description}</p>
-                <ItemCount title={data.title} stock={data.stock} initial={initial} />
+                <h3 className="itemTitle">{title}</h3>
+                <span className="color">{color}</span>
+                <span className="price">${price}</span>
+                <p className="description">{description}</p>
+                <ItemCount title={title} stock={stock} initial={initial} />
                 {/* agrego evento onclick arriba*/}
             </div>
         </>

@@ -4,7 +4,7 @@ header {
 	background-color: $color-60;
 	border-bottom: solid 1px $color-30b;
 	height: $header-height;
-	position: sticky;
+	position: fixed;
 	top: 0;
 	width: 100%;
 	height: $header-height;

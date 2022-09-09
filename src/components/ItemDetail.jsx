@@ -1,7 +1,7 @@
-import ItemCount from "./ItemCount";
+import ItemCount from './ItemCount';
 
 const ItemDetail = ({ data, initial }) => {
-    const {title, color, price, pictureUrl, description, stock} = data;
+    const { title, color, price, pictureUrl, description, stock } = data;
     return (
         <>
             <img src={pictureUrl} alt={title} />
@@ -11,7 +11,7 @@ const ItemDetail = ({ data, initial }) => {
                 <span className="price">${price}</span>
                 <p className="description">{description}</p>
                 <ItemCount title={title} stock={stock} initial={initial} />
-                {/* agrego evento onclick arriba*/}
+                <span className="stock">stock: {stock}</span>
             </div>
         </>
     )

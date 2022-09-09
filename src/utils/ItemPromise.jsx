@@ -6,7 +6,7 @@ let Delay = (task) => {
         if (alwaysTrue) {
             setTimeout(() => {
                 resolve(task)
-            }, 2000);
+            }, 500);
         }
         else {
             reject("error")

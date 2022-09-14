@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
-function ItemCount({ title, stock, initial }) {
-    
+function ItemCount({ title, stock, initial, id, setPassedCount }) {
+
     let stockNum = Number(stock);
     let initialNum = Number(initial);
 
@@ -11,8 +11,8 @@ function ItemCount({ title, stock, initial }) {
     function onAdd() {
         if (stockNum >= 1) {
             // aqui voy a quitar la cantidad de items agregados al carrito del array de items almacenados en un json
-            alert(`${count} x ${title} agregado al carrito.`);
-
+            alert(`${count} x ${title} agregado al carrito. id: ${id}`);
+            setPassedCount(count);
         }
     }
 
@@ -37,9 +37,7 @@ function ItemCount({ title, stock, initial }) {
                 </div>
                 <button onClick={() => itemAdder('add')}>+</button>
             </div>
-            <button className="btn btn-color-30 width100" onClick={onAdd}>
-                Sumar al carrito
-            </button>
+            <button className="btn btn-color-30 width100" onClick={() => onAdd()}>Sumar al carrito</button>
         </div>
     )
 }

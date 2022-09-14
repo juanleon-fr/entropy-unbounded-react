@@ -265,6 +265,30 @@ body #root .App {
   width: 100%;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0e1213;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #3d4041;
+}
+
+::-webkit-scrollbar-button:single-button {
+  background-color: #ebebeb;
+}
+
 section {
   min-height: 100%;
   height: fit-content;
@@ -577,7 +601,7 @@ button {
   width: 100%;
 }
 
-.itemDetailContainer {
+.itemDetailContainer .itemDetailCard {
   display: flex;
   flex-direction: row;
   width: fit-content;
@@ -589,10 +613,10 @@ button {
   padding: 50px 80px;
   background-color: #ffffff;
 }
-.itemDetailContainer img {
+.itemDetailContainer .itemDetailCard img {
   height: 600px;
 }
-.itemDetailContainer .itemDetailData {
+.itemDetailContainer .itemDetailCard .itemDetailData {
   width: 98%;
   max-width: 500px;
   display: flex;
@@ -601,7 +625,7 @@ button {
   justify-content: flex-start;
   gap: 10px;
 }
-.itemDetailContainer .itemDetailData h3 {
+.itemDetailContainer .itemDetailCard .itemDetailData h3 {
   font-family: "Barlow", sans-serif;
   height: fit-content;
   font-weight: 800;
@@ -609,7 +633,7 @@ button {
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
-.itemDetailContainer .itemDetailData .color {
+.itemDetailContainer .itemDetailCard .itemDetailData .color {
   font-family: "Barlow", sans-serif;
   letter-spacing: 0.2em;
   font-weight: 300;
@@ -617,7 +641,7 @@ button {
   color: #3d4041;
   text-transform: uppercase;
 }
-.itemDetailContainer .itemDetailData .price {
+.itemDetailContainer .itemDetailCard .itemDetailData .price {
   background-color: #0e1213;
   margin: 10px 0;
   padding: 0.5em 0.6em;
@@ -630,12 +654,15 @@ button {
   letter-spacing: 0.05em;
   transition: 0.2s;
 }
-.itemDetailContainer .itemDetailData .price:hover {
+.itemDetailContainer .itemDetailCard .itemDetailData .price:hover {
   transform: translate(0, -8px);
 }
-.itemDetailContainer .itemDetailData .description {
+.itemDetailContainer .itemDetailCard .itemDetailData .description {
   margin: 30px 0;
   font-size: 1.2rem;
+}
+.itemDetailContainer .itemDetailCard .itemDetailData button {
+  cursor: unset;
 }
 
 header {

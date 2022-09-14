@@ -46,6 +46,32 @@ body {
 	width: 100%;
 }
 
+//scrollbar
+
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+	background: $color-60; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+	background: $color-30; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+	background: $color-30hl; 
+  }
+
+  ::-webkit-scrollbar-button:single-button {
+    background-color: $color-60-dim;
+  }
+
 //basic section sizing
 section {
 	min-height: 100%;

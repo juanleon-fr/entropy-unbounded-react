@@ -11,4 +11,4 @@ El proyecto consiste en una simulación de Ecommerce de una marca ficticia de ro
 
 EDIT DESAFÍO: SINCRONIZAR COUNTER
 
-Lo que hice para este desafío básicamente fue enviarle desde un componente padre (ItemDetail) a un componente hijo (ItemCount) una función setPassedCount como prop, con el objetivo de utilizarlo para actualizar el estado de un "contador" ubicado en ItemDetail en una vez que se presiona en "sumar al carrito", dentro del ItemCount. 
+Lo que hice para este desafío básicamente fue enviarle desde un componente padre (ItemDetail) a un componente hijo (ItemCount) una función setPassedCount como prop, con el objetivo de utilizarlo para actualizar el estado de un "contador" ubicado en ItemDetail en una vez que se presiona en "sumar al carrito", dentro del ItemCount. Luego de presionado el botón, el componente ItemCount se intercambia por un botón Checkout que una vez presionado lleva a "/cart", donde por ahora solo hay un tag h1.

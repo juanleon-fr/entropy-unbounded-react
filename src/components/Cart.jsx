@@ -1,9 +1,11 @@
-const Cart = () => {
-    return(
-        <div>
-            <h1>hola</h1>
-        </div>
-    )
-}
+import CartListMap from './CartListMap';
 
-export default Cart
+const Cart = () => {
+	return (
+		<section>
+			<CartListMap />
+		</section>
+	);
+};
+
+export default Cart;

@@ -6,13 +6,16 @@ const CartContextProvider = ({ children }) => {
 	const [cartList, setCartList] = useState([]);
 
 	const addItem = (item, quantity) => {
-		let cartItem = { ...item, quantity };
-		console.log({item})
-		console.log({cartItem})
 		if (isInCart(item.id)) {
-			let abc = 1;
-			console.log(abc);
-		} else setCartList([...cartList, cartItem]);
+			alert('El producto ya se encuentra en el carito. Remuévalo desde la sección carrito y vuelva a agregarlo');
+		} else {
+			let cartItem = { ...item, quantity };
+			{
+				setCartList([...cartList, cartItem]);
+				alert(`${cartItem.quantity} x ${item.title} agregado al carrito. id: ${item.id}`);
+
+			}
+		}
 	};
 
 	const removeItem = (id) => {

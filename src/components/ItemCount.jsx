@@ -13,9 +13,8 @@ function ItemCount({ title, stock, initial, id, setPassedCount }) {
 	function onAdd(id,count) {
 		if (stockNum >= 1) {
 			// aqui voy a quitar la cantidad de items agregados al carrito del array de items almacenados en un json
-			alert(`${count} x ${title} agregado al carrito. id: ${id}`);
+			// alert(`${count} x ${title} agregado al carrito. id: ${id}`);
 			const item = itemListData.find(item => item.id === id)
-			console.log(item)
 			setPassedCount(count);
 			global.addItem(item,count);
 		}

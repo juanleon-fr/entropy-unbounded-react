@@ -9,6 +9,8 @@ El sitio funciona mediante componentes para una buena modularización y para reu
 El proyecto consiste en una simulación de Ecommerce de una marca ficticia de ropa. Se implementa la librería React Router para poder mostrar el sitio como una SPA, y de esa manera mejorar los tiempos de carga y la experiencia de usuario, cargando solo el contenido que se necesita y no volver a cargar elementos que se reutilizan constantemente en un sitio web como lo son la barra de navegación y el pie de página (footer).
 
 
-EDIT DESAFÍO: SINCRONIZAR COUNTER
+EDIT DESAFÍO: CART CONTEXT
 
-Lo que hice para este desafío básicamente fue enviarle desde un componente padre (ItemDetail) a un componente hijo (ItemCount) una función setPassedCount como prop, con el objetivo de utilizarlo para actualizar el estado de un "contador" ubicado en ItemDetail en una vez que se presiona en "sumar al carrito", dentro del ItemCount. Luego de presionado el botón, el componente ItemCount se intercambia por un botón Checkout que una vez presionado lleva a "/cart", donde por ahora solo hay un tag h1.
+Lo que hice para este desafío fue agregar un cartcontext.jsx que contenga estados y funciones globales para no depender de enviar los mismos estados y funciones a traves de propiedades de un componente padre hasta el ultimo componente hijo que los requiera.
+
+No me siento conforme con el resultado, dado que todo esta muy mal optimizado, en cartitemrender.jsx necesito usar item dos veces (item.item.${...}) y todavia no detecto por que, y otras inconveniencias que tuve al momento de armar todo, dado que como no conocia context, preparaba el flujo de la app para que los estados y funciones se enviaran como props dentro de cada componente. Asi que muy probalbemente para la entrega del martes (si me da el tiempo) tenga un proyecto nuevo iniciado desde cero pero conociendo ahora todos las herramientas para aplicarlas desde el comienzo.

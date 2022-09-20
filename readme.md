@@ -9,8 +9,6 @@ El sitio funciona mediante componentes para una buena modularización y para reu
 El proyecto consiste en una simulación de Ecommerce de una marca ficticia de ropa. Se implementa la librería React Router para poder mostrar el sitio como una SPA, y de esa manera mejorar los tiempos de carga y la experiencia de usuario, cargando solo el contenido que se necesita y no volver a cargar elementos que se reutilizan constantemente en un sitio web como lo son la barra de navegación y el pie de página (footer).
 
 
-EDIT DESAFÍO: CART CONTEXT
+EDIT DESAFÍO: CART VIEW
 
-Lo que hice para este desafío fue agregar un cartcontext.jsx que contenga estados y funciones globales para no depender de enviar los mismos estados y funciones a traves de propiedades de un componente padre hasta el ultimo componente hijo que los requiera.
-
-No me siento conforme con el resultado, dado que todo esta muy mal optimizado, en cartitemrender.jsx necesito usar item dos veces (item.item.${...}) y todavia no detecto por que, y otros inconvenientes que tuve al momento de armar todo, dado que como no conocia context, preparaba el flujo de la app para que los estados y funciones se enviaran como props dentro de cada componente. Asi que muy probalbemente para la entrega del martes (si me da el tiempo) tenga un proyecto nuevo iniciado desde cero pero conociendo ahora todos las herramientas para aplicarlas desde el comienzo.
+Para este desafío creo que me enrosqué más de la cuenta, además de que al querer remover elementos del carrito, tengo problemas con el useState, que no actualiza los estados. Sé que para esto debo usar un useEffect pero todavía estoy viendo de qué manera implementarlo, dado que mi código es bastante confuso... Creo que mi mejor opción es rehacer CartContext.jsx y usar variables, estados y funciones globales donde convenga. Pero si se trata de pasar estos entre dos componentes emparentados directamente entonces será mediante props en el componente hijo.

@@ -2,7 +2,7 @@ import { CartContext } from '../context/CartContext';
 import { useContext } from 'react';
 
 const CartItemRender = (item) => {
-	const cartGlobalContext = useContext(CartContext)
+	const global = useContext(CartContext)
 	let totalPrice = item.item.price * item.item.quantity;
 	return (
 		<li>
@@ -29,7 +29,7 @@ const CartItemRender = (item) => {
 					</div>
 				</div>
 			</div>
-			<button onClick={() => cartGlobalContext.removeItem(item.item.id)}>Eliminar Item</button>
+			<button onClick={() => global.removeItem(item.item.id)}>Eliminar Item</button>
 		</li>
 	);
 };

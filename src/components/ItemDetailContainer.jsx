@@ -8,7 +8,7 @@ const ItemDetailContainer = () => {
 	const { routingtitle } = useParams();
 	let [product, setProduct] = useState({});
 	useEffect(() => {
-		Delay(products.find((element) => element.routingtitle === routingtitle))
+		Delay(products.find((element) => element.routingtitle === routingtitle),500)
 			.then((result) => setProduct(result))
 			.catch((err) => console.log(err));
 	}, [routingtitle]);

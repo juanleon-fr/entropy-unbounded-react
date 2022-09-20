@@ -16,6 +16,7 @@ function ItemCount({ title, stock, initial, id, setPassedCount }) {
 			// alert(`${count} x ${title} agregado al carrito. id: ${id}`);
 			const item = itemListData.find(item => item.id === id)
 			setPassedCount(count);
+			global.setQuantityState(global.quantityState + count);
 			global.addItem(item,count);
 		}
 	}

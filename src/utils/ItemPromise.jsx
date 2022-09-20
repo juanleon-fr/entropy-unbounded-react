@@ -1,12 +1,12 @@
 const alwaysTrue = true;
 
 
-let Delay = (task) => {
+let Delay = (task,time) => {
     return new Promise((resolve, reject) => {
         if (alwaysTrue) {
             setTimeout(() => {
                 resolve(task)
-            }, 500);
+            }, time);
         }
         else {
             reject("error")

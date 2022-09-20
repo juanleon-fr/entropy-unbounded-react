@@ -2,13 +2,13 @@ import CartItemRender from './CartItemRender';
 import { CartContext } from '../context/CartContext';
 import { useContext } from 'react';
 
-const CartListMap = () => {
-	const cart = useContext(CartContext);
-	console.log(cart.cartList)
+const CartListMap = (setTotal) => {
+	const global = useContext(CartContext);
+	console.log(global.cartList);
 	return (
 		<section className='cartListContainer'>
 			<ul>
-				{cart.cartList.map((item) => (
+				{global.cartList.map((item) => (
 					<CartItemRender key={item.id} item={item}></CartItemRender>
 				))}
 			</ul>

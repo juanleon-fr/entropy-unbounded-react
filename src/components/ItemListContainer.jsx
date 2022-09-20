@@ -9,11 +9,11 @@ const ItemListContainer = () => {
 	const { category } = useParams();
 	useEffect(() => {
 		if (category) {
-			Delay(itemListData.filter((item) => item.category === category))
+			Delay(itemListData.filter((item) => item.category === category),500)
 				.then((result) => setProducts(result))
 				.catch((err) => console.log(err));
 		} else {
-			Delay(itemListData)
+			Delay(itemListData,500)
 				.then((result) => setProducts(result))
 				.catch((err) => console.log(err));
 		}

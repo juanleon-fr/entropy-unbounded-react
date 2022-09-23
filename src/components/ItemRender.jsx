@@ -13,7 +13,7 @@ const Item = ({ id, title, price, color, pictureUrl, routingtitle }) => {
 					<h3 className='color-30'>{title}</h3>
 					<h4 className='color-30'>{color}</h4>
 				</div>
-				<Link to={`/item/${routingtitle}`}><SpecialBtn color='color-30'>Detalles</SpecialBtn></Link>
+				<Link to={`/item/${id}`}><SpecialBtn color='color-30'>Detalles</SpecialBtn></Link>
 			</div>
 		</div>
 	);

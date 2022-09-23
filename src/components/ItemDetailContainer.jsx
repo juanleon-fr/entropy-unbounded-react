@@ -1,17 +1,16 @@
 import ItemDetail from './ItemDetail';
-import Delay from '../utils/ItemPromise';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import products from '../utils/json/itemListData.json';
+import { fsFetchDocById } from '../utils/firebaseConfig';
 
 const ItemDetailContainer = () => {
-	const { routingtitle } = useParams();
+	const { id } = useParams();
 	let [product, setProduct] = useState({});
 	useEffect(() => {
-		Delay(products.find((element) => element.routingtitle === routingtitle),500)
+		fsFetchDocById(id)
 			.then((result) => setProduct(result))
 			.catch((err) => console.log(err));
-	}, [routingtitle]);
+	}, [id]);
 	if (product.title) {
 		return (
 			<div className='itemDetailContainer'>

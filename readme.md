@@ -11,4 +11,5 @@ El proyecto consiste en una simulación de Ecommerce de una marca ficticia de ro
 
 EDIT DESAFÍO: CART VIEW
 
-Para este desafío creo que me enrosqué más de la cuenta, además de que al querer remover elementos del carrito, tengo problemas con el useState, que no actualiza los estados. Sé que para esto debo usar un useEffect pero todavía estoy viendo de qué manera implementarlo, dado que mi código es bastante confuso... Creo que mi mejor opción es rehacer CartContext.jsx y usar variables, estados y funciones globales donde convenga. Pero si se trata de pasar estos entre dos componentes emparentados directamente entonces será mediante props en el componente hijo.
+Se creó un archivo firebaseConfig.jsx que exporta dos funciones: una para obtener todos los documentos y otra para obtener un solo documento a través de la id (proporcionada por el React Router Dom al hacer click en algún elemento de la lista de productos).
+La primera función se ejecuta en el inicio de la App y se filtra el resultado por categorías si es necesario. La segunda función se ejecuta al ingresar a los detalles de un producto, buscando en la base de datos el documento que contenga la misma id que muestra la ruta item/id.

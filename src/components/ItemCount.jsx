@@ -1,23 +1,25 @@
 import React, { useState } from 'react';
 import { useContext } from 'react';
 import { CartContext } from '../context/CartContext';
-import itemListData from '../utils/json/itemListData.json'
+import itemListData from '../utils/json/itemListData.json';
 
-function ItemCount({ title, stock, initial, id, setPassedCount }) {
+function ItemCount(data) {
+	const { title, stock, initial, id, setPassedCount } = data;
 	let stockNum = Number(stock);
 	let initialNum = Number(initial);
 
 	const [count, setCount] = useState(initialNum);
-	const global = useContext(CartContext)
+	const global = useContext(CartContext);
 
-	function onAdd(id,count) {
+	function onAdd(id, count) {
+		// fsFetch()
+		// 	.then((result) => result.find((item) => item.id === id))
+		// 	.then();
 		if (stockNum >= 1) {
-			// aqui voy a quitar la cantidad de items agregados al carrito del array de items almacenados en un json
-			// alert(`${count} x ${title} agregado al carrito. id: ${id}`);
-			const item = itemListData.find(item => item.id === id)
+			const item = itemListData.find((item) => item.id === id);
 			setPassedCount(count);
 			global.setQuantityState(global.quantityState + count);
-			global.addItem(item,count);
+			global.addItem(item, count);
 		}
 	}
 
@@ -46,7 +48,7 @@ function ItemCount({ title, stock, initial, id, setPassedCount }) {
 				</div>
 				<button onClick={() => itemAdder('add')}>+</button>
 			</div>
-			<button className='btn btn-color-30 width100' onClick={() => onAdd(id,count)}>
+			<button className='btn btn-color-30 width100' onClick={() => onAdd(id, count)}>
 				Sumar al carrito
 			</button>
 		</div>

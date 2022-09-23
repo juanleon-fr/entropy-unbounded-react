@@ -6,11 +6,8 @@ import ItemDetailContainer from './components/ItemDetailContainer';
 import Cart from './components/Cart';
 import CartContextProvider from './context/CartContext';
 import './css/App.css';
-import { fsFetchDocById } from './utils/firebaseConfig';
 
 function App() {
-	fsFetchDocById('10')
-		.then(result => console.log(result))
 	return (
 		<CartContextProvider>
 			<Router>
@@ -20,7 +17,7 @@ function App() {
 						<Routes>
 							<Route path='/' element={<ItemListContainer />} />
 							<Route path='/products/:category' element={<ItemListContainer />} />
-							<Route path='/item/:id' element={<ItemDetailContainer />} />
+							<Route path='/item/:routingtitle' element={<ItemDetailContainer />} />
 							<Route path='/cart' element={<Cart />} />
 						</Routes>
 					</div>

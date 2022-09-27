@@ -43,7 +43,6 @@ const CartContextProvider = ({ children }) => {
 
 	const isInCart = (id) => {
 		if (cartList.find((item) => item.id === id)) return true;
-		else return false;
 	};
 
 	return <CartContext.Provider value={{ cartList, addItem, removeItem, clear, cartIsEmpty, totalCount, setQuantityState, quantityState, totalPrice }}>{children}</CartContext.Provider>;

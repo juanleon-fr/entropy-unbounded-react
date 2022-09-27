@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from 'firebase/app';
-import { getFirestore, collection, getDocs, doc, getDoc } from 'firebase/firestore';
+import { getFirestore, collection, getDocs, doc, getDoc, setDoc, updateDoc, increment } from 'firebase/firestore';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -27,14 +27,26 @@ export const fsFetchDocs = async () => {
 
 export const fsFetchDocById = async (id) => {
 	const docRef = doc(db, 'products', id);
-	const docSnap = await getDoc(docRef);		
+	const docSnap = await getDoc(docRef);
 	if (docSnap.exists()) {
-		const item = docSnap.data()
+		const item = docSnap.data();
 		item.id = id;
 		return item;
 	} else {
 		// doc.data() will be undefined in this case
 		console.log('No such document!');
 	}
-	
+};
+
+export const fsSetDocOrder = async (order) => {
+	const newOrderRef = doc(collection(db, 'orders'));
+	await setDoc(newOrderRef, order);
+	return newOrderRef;
+};
+
+export const fsUpdateDoc = async (id, substractStock) => {
+	const itemRef = doc(db, 'products', id);
+	await updateDoc(itemRef, {
+		stock: increment(-substractStock),
+	});
 };

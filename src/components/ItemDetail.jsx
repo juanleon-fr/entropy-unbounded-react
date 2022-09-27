@@ -3,9 +3,9 @@ import SpecialBtn from './SpecialBtn';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
-const ItemDetail = ({ data, initial }) => {
+const ItemDetail = ({ product, initial }) => {
 	const [PassedCount, setPassedCount] = useState(0);
-	const { title, color, price, pictureUrl, description, stock, id } = data;
+	const { title, color, price, pictureUrl, description, stock, id } = product;
 	let component;
 	PassedCount === 0
 		? (component = <ItemCount title={title} stock={stock} initial={initial} id={id} setPassedCount={setPassedCount} />)

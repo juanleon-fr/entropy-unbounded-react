@@ -1,7 +1,7 @@
 import SpecialBtn from './SpecialBtn';
 import { Link } from 'react-router-dom';
 
-const Item = ({ id, title, price, color, pictureUrl, routingtitle }) => {
+const Item = ({ id, title, price, color, pictureUrl }) => {
 	return (
 		<div className='card bg-color-60 product--card box-shadow translate-on-hover' id={id}>
 			<div className='product--card__img'>

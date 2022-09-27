@@ -4,7 +4,6 @@ import { useContext } from 'react';
 
 const CartListMap = (setTotal) => {
 	const global = useContext(CartContext);
-	console.log(global.cartList);
 	return (
 		<section className='cartListContainer'>
 			<ul>

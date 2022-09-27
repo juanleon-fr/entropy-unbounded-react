@@ -30,7 +30,7 @@ function NavBar() {
           				<Link to='/products/hoodies'><li className='nav-item'><SpecialBtn>Buzos</SpecialBtn></li></Link>
 						<Link to='/products/pants'><li className='nav-item'><SpecialBtn>Pantalones</SpecialBtn></li></Link>
 						{!navContext.cartIsEmpty ? <Link to='/cart'><li className='nav-item'><SpecialBtn><CartWidget /></SpecialBtn></li></Link> : <></>}
-						<li className='nav-item' id='login-li'><SpecialBtn color='color-10'>Ingresar</SpecialBtn></li>
+						<li className='nav-item' id='login-li'><SpecialBtn color='color-10'>Botón de adorno!</SpecialBtn></li>
 					</ul>
 				</nav>
 			</header>

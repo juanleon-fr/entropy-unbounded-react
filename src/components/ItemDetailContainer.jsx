@@ -14,7 +14,7 @@ const ItemDetailContainer = () => {
 	if (product.title) {
 		return (
 			<div className='itemDetailContainer'>
-				<ItemDetail data={product} initial={1} />
+				<ItemDetail product={product} initial={1} />
 			</div>
 		);
 	}

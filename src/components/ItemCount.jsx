@@ -1,26 +1,25 @@
 import React, { useState } from 'react';
 import { useContext } from 'react';
 import { CartContext } from '../context/CartContext';
-import itemListData from '../utils/json/itemListData.json';
+import { fsFetchDocById } from '../utils/firebaseConfig';
 
-function ItemCount(data) {
-	const { title, stock, initial, id, setPassedCount } = data;
+function ItemCount(product) {
+	const { title, stock, initial, id, setPassedCount } = product;
 	let stockNum = Number(stock);
 	let initialNum = Number(initial);
-
 	const [count, setCount] = useState(initialNum);
 	const global = useContext(CartContext);
-
 	function onAdd(id, count) {
-		// fsFetch()
-		// 	.then((result) => result.find((item) => item.id === id))
-		// 	.then();
-		if (stockNum >= 1) {
-			const item = itemListData.find((item) => item.id === id);
-			setPassedCount(count);
-			global.setQuantityState(global.quantityState + count);
-			global.addItem(item, count);
+		fsFetchDocById(id).then((result) => {
+			if (stockNum >= 1) {
+				setPassedCount(count);
+				global.setQuantityState(global.quantityState + count);
+				global.addItem(result, count);
+				return
+			}
+			console.log('no hay más stock')
 		}
+		);
 	}
 
 	function itemAdder(op) {

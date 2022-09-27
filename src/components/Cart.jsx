@@ -26,10 +26,12 @@ const Cart = () => {
 			total: global.totalPrice,
 		};
 		fsSetDocOrder(order)
-			.then((result) => alert(`Orden creada. \n Id: ${result.id}`))
+			.then((result) => {
+				alert(`Orden creada. \n Id: ${result.id}`);
+				global.cartList.forEach(async (item) => await fsUpdateDoc(item.id, item.quantity));
+				global.clear();
+			})
 			.catch((err) => console.log(err));
-		global.cartList.forEach(async(item) => await fsUpdateDoc(item.id, item.quantity))
-		global.clear();
 	};
 	return (
 		<section>

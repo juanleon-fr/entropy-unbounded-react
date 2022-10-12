@@ -8,10 +8,10 @@ _El sitio funciona mediante componentes para una buena modularización y para re
 
 _El proyecto consiste en una simulación de Ecommerce de una marca ficticia de ropa. Se implementa la librería React Router para poder mostrar el sitio como una SPA, y de esa manera mejorar los tiempos de carga y la experiencia de usuario, cargando solo el contenido que se necesita y no volver a cargar elementos que se reutilizan constantemente en un sitio web como lo son la barra de navegación y el pie de página (footer). Además se utilizó una librería de spinners (react-spinners)._
 
-## Video del funcionamiento
+## Video del funcionamiento del sitio
 
 https://drive.google.com/drive/u/1/folders/1u8EY_YvVb9omEtzxILDD3x_yfmNPg8SU
 
-## Link al deployment en Netlify
+## Link al deploy en Netlify
 
 https://chimerical-mochi-940791.netlify.app/

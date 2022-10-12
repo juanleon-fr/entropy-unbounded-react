@@ -2,7 +2,7 @@ import { CartContext } from '../context/CartContext';
 import { useContext } from 'react';
 
 const CartItemRender = (item) => {
-	const global = useContext(CartContext)
+	const global = useContext(CartContext);
 	let totalPrice = item.item.price * item.item.quantity;
 	return (
 		<li>
@@ -10,14 +10,15 @@ const CartItemRender = (item) => {
 				<div className='cartItemImg'>
 					<img src={item.item.pictureUrl} alt={item.item.title} />
 				</div>
+				<div className='itemTitle'>
+					<span>
+						{item.item.title}
+					</span>
+				</div>
 				<div className='cartItemDetails'>
-					<div className='title-color'>
-						<span className='title'>{item.item.title}</span>
-						<span className='color'>{item.item.color}</span>
-					</div>
 					<div className='unit-price'>
 						<span className='uppertext'>Precio Unit.</span>
-						<span>{item.item.price}</span>
+						<span>${item.item.price}</span>
 					</div>
 					<div className='quantity'>
 						<span className='uppertext'>Cant.</span>
@@ -25,7 +26,7 @@ const CartItemRender = (item) => {
 					</div>
 					<div className='price'>
 						<span className='uppertext'>Precio</span>
-						<span>{totalPrice}</span>
+						<span>${totalPrice}</span>
 					</div>
 				</div>
 			</div>

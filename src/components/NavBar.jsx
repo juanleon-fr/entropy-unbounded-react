@@ -7,9 +7,8 @@ import { CartContext } from '../context/CartContext';
 import { useContext } from 'react';
 
 function NavBar() {
-	const navContext = useContext(CartContext);
+	const global = useContext(CartContext);
 	return (
-		// <Router>
 		<>
 			<header>
 				<nav className='navbar'>
@@ -26,16 +25,15 @@ function NavBar() {
 						</div>
 					</Link>
 					<ul className='nav-menu'>
+						{global.totalCount !== 0 ? <Link to='/cart'><li className='nav-item'><SpecialBtn><CartWidget /></SpecialBtn></li></Link> : <></>}
           				<Link to='/products/tshirts'><li className='nav-item'><SpecialBtn>Remeras</SpecialBtn></li></Link>
           				<Link to='/products/hoodies'><li className='nav-item'><SpecialBtn>Buzos</SpecialBtn></li></Link>
 						<Link to='/products/pants'><li className='nav-item'><SpecialBtn>Pantalones</SpecialBtn></li></Link>
-						{!navContext.cartIsEmpty ? <Link to='/cart'><li className='nav-item'><SpecialBtn><CartWidget /></SpecialBtn></li></Link> : <></>}
-						<li className='nav-item' id='login-li'><SpecialBtn color='color-10'>Botón de adorno!</SpecialBtn></li>
+						<li className='nav-item' id='login-li'><SpecialBtn className={'btn-color-10'}>Botón de adorno!</SpecialBtn></li>
 					</ul>
 				</nav>
 			</header>
 		</>
-		// </Router>
 	);
 }
 

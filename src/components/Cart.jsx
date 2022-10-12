@@ -34,25 +34,29 @@ const Cart = () => {
 			.catch((err) => console.log(err));
 	};
 	return (
-		<section>
-			{global.cartIsEmpty ? (
-				<>
-					<span>
-						El carrito está vacío. haga click <Link to='/'>aquí</Link> para ir a la lista de artículos
-					</span>
-				</>
+		<section className='cartContainer'>
+			{global.totalCount === 0 ? (
+				<div className='emptycart'>
+					<p>
+						El carrito está vacío. haga click{' '}
+						<span>
+							<Link to='/'>aquí</Link>
+						</span>{' '}
+						para ir a la lista de artículos.
+					</p>
+				</div>
 			) : (
 				<>
+					<div className='separator--blank'></div>
 					<CartListMap />
-					<span>Total: ${global.totalPrice}</span>
-					<SpecialBtn onClick={() => createOrder()}>Finalizar compra</SpecialBtn>
-					<SpecialBtn onClick={() => global.clear()}>Vaciar carrito</SpecialBtn>
-					<button className='btn btn-color-10' onClick={() => createOrder()}>
-						Finalizar Compra
-					</button>
-					<button className='btn btn-color-30' onClick={() => global.clear()}>
-						Vaciar Carrito
-					</button>
+					<div className='separator--blank'></div>
+					<span className='totalPrice'>Total: ${global.totalPrice}</span>
+					<div className='separator--blank'></div>
+					<div>
+						<SpecialBtn className={'btn-color-10'} onClick={() => createOrder()} color={'color-10'}>Finalizar compra</SpecialBtn>
+						<SpecialBtn onClick={() => global.clear()} color={'color-30'}>Vaciar carrito</SpecialBtn>
+					</div>
+					<div className='separator--blank'></div>
 				</>
 			)}
 		</section>

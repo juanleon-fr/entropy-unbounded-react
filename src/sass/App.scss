@@ -7,6 +7,11 @@
 @import 'ItemCount';
 @import 'ItemDetail';
 @import 'NavBar';
+@import 'Cart';
+
+html {
+    overflow-y: scroll;
+}
 
 .App {
     height: 100%;
@@ -18,7 +23,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     min-height: 100%;
 }
 
@@ -94,7 +99,7 @@
 
 .separator--blank {
     display: block;
-    height: 140px;
+    height: $header-height;
     width: 100%;
 }
 
@@ -245,121 +250,6 @@
     }
 
     p {
-        font-weight: 500;
-    }
-}
-
-.cart {
-    background-color: $color-60;
-    z-index: 5;
-    width: 800px;
-    height: fit-content;
-    margin: auto auto;
-    display: grid;
-    grid-template-rows: 60px 1fr 60px 60px;
-    text-align: center;
-
-    .cart--title {
-        grid-row: 1/2;
-        font-size: 1.5rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
-        h3 {
-            font-family: $maintypog;
-            text-transform: uppercase;
-            color: $color-30;
-            font-weight: 700;
-
-            span {
-                font-weight: 700;
-                padding: 8px;
-                font-size: 1.2rem;
-                padding-top: 2px;
-                padding-bottom: 2px;
-                border-radius: 16px;
-                background-color: $color-10;
-            }
-        }
-    }
-
-    .cart__container {
-        grid-row: 2/3;
-
-        span {
-            text-align: center;
-        }
-
-        .autogrid {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            height: 60px;
-
-            >* {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-
-            .productName {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: flex-start;
-
-                .cart__img {
-                    height: 54px;
-                    width: 54px;
-                    overflow: hidden;
-                    border: solid 1px $color-30b;
-                    margin-left: 20px;
-                    margin-right: 6px;
-
-                    .miniImg {
-                        width: 100%;
-                    }
-                }
-            }
-
-            .mult {
-                margin-left: 10px;
-
-                button {
-                    margin-left: 16px;
-                    margin-right: 16px;
-                }
-            }
-        }
-
-    }
-
-    .flex {
-        display: flex;
-        width: 100%;
-        height: 100%;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .cart__suma {
-        grid-row: 3/4;
-        background-color: $color-30;
-
-        span {
-            color: $color-60;
-        }
-
-    }
-
-    .cart__checkout {
-        grid-row: 4/5;
-        background-color: $color-10;
-
-        button {
-            background-color: unset;
-            color: $color-30;
-        }
+        font-weight: 600;
     }
 }

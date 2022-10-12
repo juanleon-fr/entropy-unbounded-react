@@ -1,25 +1,26 @@
-import React, { useState } from 'react';
-import { useContext } from 'react';
+import React, { useState, useContext } from 'react';
 import { CartContext } from '../context/CartContext';
 import { fsFetchDocById } from '../utils/firebaseConfig';
+import SpecialBtn from './SpecialBtn';
 
 function ItemCount(product) {
 	const { title, stock, initial, id, setPassedCount } = product;
-	let stockNum = Number(stock);
 	let initialNum = Number(initial);
 	const [count, setCount] = useState(initialNum);
 	const global = useContext(CartContext);
+	let maxNumb;
+	const inCartItem = global.cartList.find((element) => element.id === id);
+	inCartItem !== undefined ? (maxNumb = Number(stock) - inCartItem.quantity) : (maxNumb = Number(stock));
+
 	function onAdd(id, count) {
 		fsFetchDocById(id).then((result) => {
-			if (stockNum >= 1) {
+			if (maxNumb >= 1) {
 				setPassedCount(count);
-				global.setQuantityState(global.quantityState + count);
 				global.addItem(result, count);
-				return
+				return;
 			}
-			console.log('no hay más stock')
-		}
-		);
+			alert('¡Ups! Nos quedamos sin stock.');
+		});
 	}
 
 	function itemAdder(op) {
@@ -29,7 +30,7 @@ function ItemCount(product) {
 			}
 		}
 		if (op === 'add') {
-			if (count < stockNum) {
+			if (count < maxNumb) {
 				setCount(count + 1);
 			}
 		}
@@ -47,9 +48,9 @@ function ItemCount(product) {
 				</div>
 				<button onClick={() => itemAdder('add')}>+</button>
 			</div>
-			<button className='btn btn-color-30 width100' onClick={() => onAdd(id, count)}>
+			<SpecialBtn className={'btn-color-30 width100'} onClick={() => onAdd(id, count)}>
 				Sumar al carrito
-			</button>
+			</SpecialBtn>
 		</div>
 	);
 }

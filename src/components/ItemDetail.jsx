@@ -10,7 +10,7 @@ const ItemDetail = ({ product, initial }) => {
 	PassedCount === 0
 		? (component = <ItemCount title={title} stock={stock} initial={initial} id={id} setPassedCount={setPassedCount} />)
 		: (component = (
-				<Link to='/cart'><SpecialBtn color='color-10'>Checkout</SpecialBtn></Link>
+				<Link to='/cart'><SpecialBtn className={'btn-color-10'}>Checkout</SpecialBtn></Link>
 		  ));
 
 	return (
